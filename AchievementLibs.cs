@@ -98,7 +98,7 @@ namespace AchievementLibs
             try
             {
                 string call = args[0] as string;
-                if (call == "AddAchievementWithReward")
+                if (call == "AddAchievementWithSpecialReward")
                 {
                     ModCallAchievement achievement = new ModCallAchievement(args[1] as Mod);
                     achievement.name = args[2] as string;
@@ -124,7 +124,7 @@ namespace AchievementLibs
                     achievement.AutoLoad(args[1] as Mod);
                     AchievementManager.GetInstance().AddAchievement(achievement);
                 }
-                else if (call == "AddAchievementWithoutAction")
+                else if (call == "AddAchievementWithReward")
                 {
                     ModCallAchievement achievement = new ModCallAchievement(args[1] as Mod);
                     achievement.name = args[2] as string;
